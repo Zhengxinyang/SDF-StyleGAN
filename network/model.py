@@ -13,6 +13,8 @@ from utils.utils import scale_to_unit_sphere
 from .discriminator import Discriminator_3D
 from .generator import Generator, MLP_Net, StyleVectorizer
 from .loss import simple_gradient_penalty, gen_stylegan_loss, dis_stylegan_loss, calc_pl_lengths_3d
+import torch.nn.functional as F
+
 
 from .custom_layer import EMA
 
