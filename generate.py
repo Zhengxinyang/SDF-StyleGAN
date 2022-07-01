@@ -38,7 +38,6 @@ def generate(
   print("start generation")
   images = []
   for i in tqdm(range(num_generate)):
-    # print(mesh)
     mesh =  model.generate_mesh(
       ema=ema, mc_vol_size=mc_vol_size, level=level, trunc_psi=trunc_psi)
     while mesh is None:
@@ -140,7 +139,6 @@ def generate_interpolation(
       
       mesh = scale_to_unit_sphere(
           process_sdf(sdf.cpu().numpy(), level=level))
-      # mesh.export(f"./outputs/{i}_{j}.obj")
       image = render_mesh(mesh, index=view_index, resolution=render_resolution)/255
       image = torch.from_numpy(image.copy()).permute(2, 0, 1)
       images.append(image)
