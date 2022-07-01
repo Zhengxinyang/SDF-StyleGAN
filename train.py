@@ -45,7 +45,7 @@ def train_from_folder(
     mixed_prob=0.9,
     new=False,
     continue_training=True,
-    debug=True,
+    debug=False,
     verbose=False,
     adaptive_local=True,
     offset_center=False,
