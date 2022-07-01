@@ -1,0 +1,1 @@
+python train.py --name car --data /home/D/xinyang/cars_train/voxels_128 --local_patch_center_candidate_number 4096 --local_patch_loss_weight 8.0

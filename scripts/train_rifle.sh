@@ -1,0 +1,1 @@
+python train.py --name rifle --data /home/D/xinyang/rifles_train/voxels_128 --local_patch_center_candidate_number 512 --local_patch_loss_weight 4.0
