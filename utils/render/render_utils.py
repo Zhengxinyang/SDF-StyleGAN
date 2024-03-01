@@ -154,7 +154,7 @@ def pyrender_rendering(mesh, camera_pose, viz=False, light=False, intensity=3.0,
 
   if light:
     color, depth = r.render(
-        scene, flags=pyrender.constants.RenderFlags.ALL_SOLID | pyrender.constants.RenderFlags.FACE_NORMALS)
+        scene, flags=pyrender.constants.RenderFlags.ALL_SOLID)
   else:
     color, depth = r.render(
         scene, flags=pyrender.constants.RenderFlags.FLAT
